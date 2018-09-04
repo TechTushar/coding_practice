@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 
-void fibonacci_series(int n)
+int fibonacci_series(int n)
 {
     if ( n < 0 )
     return 0;
@@ -10,12 +10,13 @@ void fibonacci_series(int n)
         return 1;
     }
     else
-    return fibonacci_series(n-1) + fibonacci_series(n-2)
+    return fibonacci_series(n-1) + fibonacci_series(n-2);
 }
 
 int main()
 {
 int number;
 number = 10;
-fibonacci_series(number);
+int result = fibonacci_series(number);
+printf("%d",result);
 }
